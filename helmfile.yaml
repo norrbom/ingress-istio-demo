@@ -1,0 +1,22 @@
+repositories:
+  - name: artifactory
+    url: https://kubernetes-charts.storage.googleapis.com
+
+releases:
+  - name: app1
+    namespace: app1
+    chart: app1
+    values:
+      - app1/values.yaml
+
+  - name: app2
+    namespace: app2
+    chart: app2
+    values:
+      - app2/values.yaml
+
+  - name: nginx-ingress
+    namespace: nginx-ingress
+    chart: nginx-ingress
+    values:
+      - nginx-ingress/values.yaml
